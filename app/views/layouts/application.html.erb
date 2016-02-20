@@ -2,23 +2,12 @@
 <html>
 <head>
   <title>Hackathon</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <ul class="nav nav-tabs">
-    <div class="pull-right user-info">
-      <% if current_user %>
-        <%= current_user.email %> <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-      <% else %>
-        <%= link_to "Sign In", new_user_session_path %> or
-        <%= link_to "Sign Up", new_user_registration_path %>
-      <% end %>
-    </div>
-  </ul>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+
 <%= yield %>
 
 </body>
