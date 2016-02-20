@@ -1,0 +1,31 @@
+h2 {
+  color: $blue;
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.log-in-form {
+  @include span-columns(6);
+  @include shift(3);
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.links {
+  @include shift(7);
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+button {
+  @include span-columns(2);
+  @include shift(5);
+  padding: 0;
+}
