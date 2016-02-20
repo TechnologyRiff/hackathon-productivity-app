@@ -1,0 +1,23 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+development: &default
+  adapter: postgresql
+  database: hackathon_prodictivity_app_development
+  encoding: utf8
+  host: localhost
+  min_messages: warning
+  pool: 5
+  reaping_frequency: 10
+  timeout: 5000
+
+test:
+  <<: *default
+  database: hackathon_prodictivity_app_test
+
+production:
+  <<: *default
+  database: hackathon_prodictivity_app_production
