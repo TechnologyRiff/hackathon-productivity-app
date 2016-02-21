@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @notes = current_user.notes
   end
 
   def edit

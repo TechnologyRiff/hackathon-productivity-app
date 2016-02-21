@@ -1,0 +1,11 @@
+<%= link_to "Today's Note", user_note_path(current_user, Note.get_todays_note(current_user)) %>
+
+<%= month_calendar events: @notes, attribute: :day do |date, notes| %>
+  <%= date.day %>
+
+  <% notes.each do |note| %>
+    <div>
+      <%= link_to note.day, user_note_path(current_user, note) %>
+    </div>
+  <% end %>
+<% end %>

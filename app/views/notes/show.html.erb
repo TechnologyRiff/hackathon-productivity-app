@@ -1,1 +1,5 @@
-See one note here.
+<%= form_for [current_user, @note] do |f| %>
+  <%= f.label :summary %>
+  <%= f.text_field :summary %>
+  <%= f.submit %>
+<% end %>
