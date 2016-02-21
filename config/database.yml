@@ -6,7 +6,7 @@
 #
 development: &default
   adapter: postgresql
-  database: hackathon_productivity_app_development
+  database: hackathon_prodictivity_app_development
   encoding: utf8
   host: localhost
   min_messages: warning
@@ -16,8 +16,8 @@ development: &default
 
 test:
   <<: *default
-  database: hackathon_productivity_app_test
+  database: hackathon_prodictivity_app_test
 
 production:
   <<: *default
-  database: hackathon_productivity_app_production
+  database: hackathon_prodictivity_app_production

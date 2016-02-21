@@ -1,0 +1,11 @@
+main {
+  @include outer-container;
+}
+
+body {
+  margin: 0;
+}
+
+label {
+  display: inline;
+}
