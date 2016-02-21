@@ -1,0 +1,40 @@
+.navigation-bar {
+  background-color: #87D9F5;
+  height: 136px;
+  position: relative;
+}
+
+.header-picture {
+  @include span-columns(3);
+}
+
+.header-text {
+  font-size: 50px;
+  color: #ffffff;
+  padding-top: 25px;
+}
+
+ul {
+  float: right;
+  text-decoration: none;
+  position: relative;
+  top: -55px;
+}
+
+li {
+  display: inline;
+  font-size: 30px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+
+
+  a {
+    color: #ffffff;
+    padding-bottom: 25px;
+
+    &:hover {
+      color: #665753;
+    }
+  } 
+}
+
