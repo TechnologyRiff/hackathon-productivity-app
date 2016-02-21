@@ -10,7 +10,7 @@
     <div class="pull-right user-info">
       <% if current_user %>
         <li class="session-links">
-          <%= current_user.email %> 
+          <%= link_to (current_user.name || current_user.email), user_path(current_user) %>
           <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
         </li>
       <% else %>
