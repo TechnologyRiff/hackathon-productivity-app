@@ -18,4 +18,5 @@ private
 
   def user_params
     params.require(:user).permit(:name, :role, :avatar)
+  end
 end

@@ -15,7 +15,11 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
+<<<<<<< HEAD
+  
+=======
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+>>>>>>> parent of dda60ab... trying to add staging to master for heroku deployment
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -28,6 +32,9 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true

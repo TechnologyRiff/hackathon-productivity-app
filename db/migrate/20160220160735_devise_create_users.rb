@@ -2,6 +2,10 @@ class DeviseCreateUsers < ActiveRecord::Migration
   def change
     create_table(:users) do |t|
       ## Database authenticatable
+<<<<<<< HEAD
+      t.string :name,
+=======
+>>>>>>> parent of dda60ab... trying to add staging to master for heroku deployment
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
