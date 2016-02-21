@@ -1,10 +1,1 @@
 See all your notes here.
-<%= month_calendar events: @notes, attribute: :day do |date, notes| %>
-  <%= date.day %>
-
-  <% notes.each do |note| %>
-    <div>
-      <%= note.day %>
-    </div>
-  <% end %>
-<% end %>
