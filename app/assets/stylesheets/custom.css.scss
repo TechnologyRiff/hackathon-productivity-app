@@ -1,6 +1,11 @@
-$brown-grey: #665753;
-$pale-blue: #87D9F5;
-
 main {
   @include outer-container;
+}
+
+body {
+  margin: 0;
+}
+
+label {
+  display: inline;
 }
