@@ -1,3 +1,7 @@
+/* 
+*= require simple_calendar
+*/
+
 @import "bourbon";
 @import "base/base";
 @import "neat";
@@ -5,3 +9,6 @@
 @import "header";
 @import "sessions";
 @import "homes";
+@import "users";
+@import "notes";
+

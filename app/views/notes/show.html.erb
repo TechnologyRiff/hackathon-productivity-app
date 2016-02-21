@@ -1,7 +1,9 @@
-<%= @date %>
+<h2>Your note for <%= @date %></h2>
 
-<%= form_for [current_user, @note] do |f, g| %>
-  <%= f.label :summary %>
-  <%= f.text_field :summary %>
-  <%= f.submit %>
-<% end %>
+<div class="notes-form">
+  <%= form_for [current_user, @note] do |f| %>
+    <%= f.label :summary %>
+    <%= f.text_area :summary %>
+    <%= f.submit %>
+  <% end %>
+</div>
