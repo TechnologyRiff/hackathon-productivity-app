@@ -7,6 +7,7 @@ class NotesController < ApplicationController
 
   def show
     @note = Note.find(params[:id])
+    @date = Note.find(params[:id]).day
   end
 
   def update

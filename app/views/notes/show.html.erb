@@ -1,4 +1,6 @@
-<%= form_for [current_user, @note] do |f| %>
+<%= @date %>
+
+<%= form_for [current_user, @note] do |f, g| %>
   <%= f.label :summary %>
   <%= f.text_field :summary %>
   <%= f.submit %>
