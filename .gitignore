@@ -17,4 +17,7 @@
 /tmp
 
 *.swp
+<<<<<<< HEAD
 application.yml
+=======
+>>>>>>> parent of dda60ab... trying to add staging to master for heroku deployment
