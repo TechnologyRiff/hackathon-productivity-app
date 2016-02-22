@@ -17,7 +17,7 @@ RSpec.describe Note, type: :model do
     end
 
     it "returns a note for that day if it already exists" do
-      user = User.create
+      user = User.create(email: "test@test.com", password: "12345678")
       note = Note.create(user: user, day: Date.today)
       expect(Note.get_todays_note(user)).to eq note
     end
