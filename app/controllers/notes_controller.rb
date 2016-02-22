@@ -17,6 +17,7 @@ class NotesController < ApplicationController
   end
 
   def index
+    @notes = current_user.notes
   end
   
   private
