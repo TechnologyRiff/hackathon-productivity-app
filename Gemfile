@@ -10,6 +10,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bourbon'
 gem 'neat'
 gem "simple_calendar", "~> 2.0"
+gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
 
 group :production do 
   gem 'rails_12factor'
