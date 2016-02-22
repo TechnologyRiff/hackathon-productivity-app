@@ -11,6 +11,10 @@ gem 'bourbon'
 gem 'neat'
 gem "simple_calendar", "~> 2.0"
 
+group :production do 
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
@@ -22,5 +26,5 @@ group :development do
 end
 
 group :test do
-	gem 'shoulda-matchers', '~> 3.0'
+  gem 'shoulda-matchers', '~> 3.0'
 end
