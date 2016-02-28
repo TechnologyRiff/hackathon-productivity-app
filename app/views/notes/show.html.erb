@@ -1,0 +1,10 @@
+<h2>Your note for <%= @date %></h2>
+
+<div class="notes-form">
+  <%= form_for [current_user, @note] do |f| %>
+    <%= f.label :summary %>
+    <%= f.text_area :summary %>
+    <%= f.submit %>
+  <% end %>
+  <%= link_to "Calendar", user_path(current_user), class: :button %>
+</div>

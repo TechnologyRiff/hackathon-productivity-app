@@ -1,0 +1,22 @@
+.today-link {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.calendar {
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.month-name {
+  @include span-columns(8);
+  @include shift(2);
+
+  a {
+    color: $brown-grey;
+
+    &:hover {
+      color: shade($brown-grey, 20%);
+    }
+  }
+}

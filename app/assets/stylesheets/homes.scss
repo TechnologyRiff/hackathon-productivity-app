@@ -1,0 +1,29 @@
+.welcome-text {
+  @include span-columns(5);
+  @include shift(3.5);
+  padding-top: 10px;
+  text-align: justify;
+
+  h1 {
+    color: $brown-grey;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.team-picture {
+  width: 200px;
+}
+
+.team-pictures {
+  @include span-columns(7);
+  @include shift(2.5);
+
+  li {
+    display: inline;
+    padding-bottom: 0;
+  }
+}
+
+
